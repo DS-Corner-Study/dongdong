@@ -8,6 +8,12 @@ import org.springframework.stereotype.Controller;
 public class MemberController {
 
     private final MemberService memberService;
+//    @Autowired private final MemberService memberService;
+
+//    @Autowired
+//    public void setMemberService(MemberService memberService){
+//        this.memberService = memberService;
+//    }
 
     @Autowired
     public MemberController(MemberService memberService) {
