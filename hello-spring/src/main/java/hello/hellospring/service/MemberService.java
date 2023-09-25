@@ -3,16 +3,20 @@ package hello.hellospring.service;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     // 객체 생성 후 사용 시 다른 저장소 객체 사용하게 됨
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
     // 생성자, 인자로 저장소 받음 (같은 저장소 객체 공유) (의존성 주입(Dependency Injection)(DI))
+    @Autowired
     public MemberService(MemoryMemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
