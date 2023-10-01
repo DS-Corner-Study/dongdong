@@ -5,10 +5,12 @@ import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional //서비스 계층 데이터를 저장하고 변경하기 위해
 public class MemberService {
     // 객체 생성 후 사용 시 다른 저장소 객체 사용하게 됨
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
