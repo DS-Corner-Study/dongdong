@@ -22,8 +22,13 @@ public class PostController {
         return sb.toString();
     }
 
-    @PostMapping(value = "/mamber2") // http://localhost:8080/api/v1/post-api/member2
-    public String postMemberDto(@RequestBody MemberDto memberDto){
-        return memberDto.toString();
+    @PostMapping(value = "/member2")
+    public String postMemberDto1(@RequestBody MemberDto memberDTO) {
+        return memberDTO.toString();
+    }
+
+    @PostMapping(value = "/member3")
+    public MemberDto postMemberDto2(@RequestBody MemberDto memberDTO) {
+        return memberDTO;
     }
 }
