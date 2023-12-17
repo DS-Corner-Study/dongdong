@@ -1,9 +1,9 @@
 package com.springboot.valid_exception.controller;
 
-import com.springboot.test.data.dto.ChangeProductNameDto;
-import com.springboot.test.data.dto.ProductDto;
-import com.springboot.test.data.dto.ProductResponseDto;
-import com.springboot.test.service.ProductService;
+import com.springboot.valid_exception.data.dto.ChangeProductNameDto;
+import com.springboot.valid_exception.data.dto.ProductDto;
+import com.springboot.valid_exception.data.dto.ProductResponseDto;
+import com.springboot.valid_exception.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

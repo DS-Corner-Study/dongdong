@@ -1,7 +1,7 @@
 package com.springboot.valid_exception.service;
 
-import com.springboot.test.data.dto.ProductDto;
-import com.springboot.test.data.dto.ProductResponseDto;
+import com.springboot.valid_exception.data.dto.ProductDto;
+import com.springboot.valid_exception.data.dto.ProductResponseDto;
 
 // 예제 6.21
 public interface ProductService {
